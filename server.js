@@ -1,5 +1,5 @@
 const express = require('express'); //express library import
-const app = express; // express app initialization
+const app = express(); // express app initialization
 const port = 3000; // port assignation
 
 // set static assets
@@ -13,4 +13,4 @@ app.listen(port, () => {
 // routing
 app.get('/api/v1/blog', (req, res) => {
     res.send('Server del mio blog');
-})
+});
